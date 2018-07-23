@@ -10,12 +10,18 @@ public class Gerador : MonoBehaviour
     [SerializeField]
     private float raio;
 
-
-
     private void Start()
     {
-        
-        this.InvokeRepeating("Instanciar", 0, this.tempo);
+        StartCoroutine(this.IniciarGeracao());
+    }
+
+    private IEnumerator IniciarGeracao()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(this.tempo);
+            this.Instanciar();
+        }
     }
 
     private void Instanciar()
