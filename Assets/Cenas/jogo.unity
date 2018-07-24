@@ -254,6 +254,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b519f48fe722b84ba48fc724ec8d27e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  alvo: {fileID: 981026353}
   prefabInimigo: {fileID: 1134229065056836, guid: 83f2d8f359aa4004f9a935c6a860ce11,
     type: 2}
   tempo: 1
@@ -532,6 +533,11 @@ GameObject:
   m_PrefabParentObject: {fileID: 1314052368903796, guid: 867da2ed13811b347a09b4756abcd004,
     type: 2}
   m_PrefabInternal: {fileID: 139149042}
+--- !u!4 &981026353 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4753466492845412, guid: 867da2ed13811b347a09b4756abcd004,
+    type: 2}
+  m_PrefabInternal: {fileID: 139149042}
 --- !u!114 &981026354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -717,6 +723,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b519f48fe722b84ba48fc724ec8d27e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  alvo: {fileID: 981026353}
   prefabInimigo: {fileID: 1134229065056836, guid: 83f2d8f359aa4004f9a935c6a860ce11,
     type: 2}
   tempo: 1
@@ -1284,6 +1291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b519f48fe722b84ba48fc724ec8d27e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  alvo: {fileID: 981026353}
   prefabInimigo: {fileID: 1134229065056836, guid: 83f2d8f359aa4004f9a935c6a860ce11,
     type: 2}
   tempo: 1

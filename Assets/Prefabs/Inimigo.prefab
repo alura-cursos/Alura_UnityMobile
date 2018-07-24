@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 50205125132585506}
   - component: {fileID: 61919170566903102}
   - component: {fileID: 114961902889299820}
+  - component: {fileID: 114416686415520214}
   m_Layer: 8
   m_Name: Inimigo
   m_TagString: Untagged
@@ -37,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1134229065056836}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.50930786, y: -1.2138175, z: 0}
   m_LocalScale: {x: 1.3, y: 1.3, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
@@ -88,6 +89,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.18593287, y: 0.185933}
   m_EdgeRadius: 0
+--- !u!114 &114416686415520214
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1134229065056836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fd47859949bcb842a90e95509f3c868, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alvo: {fileID: 0}
+  velocidade: 5
 --- !u!114 &114961902889299820
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -102,8 +116,8 @@ MonoBehaviour:
   aoBater:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: Pontuar
+      - m_Target: {fileID: 114961902889299820}
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
