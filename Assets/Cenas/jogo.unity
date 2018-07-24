@@ -122,11 +122,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4753466492845412, guid: 867da2ed13811b347a09b4756abcd004, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 4.31
+      value: 4.55
       objectReference: {fileID: 0}
     - target: {fileID: 4753466492845412, guid: 867da2ed13811b347a09b4756abcd004, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3.24
+      value: 2.97
       objectReference: {fileID: 0}
     - target: {fileID: 4753466492845412, guid: 867da2ed13811b347a09b4756abcd004, type: 2}
       propertyPath: m_LocalPosition.z
@@ -157,6 +157,11 @@ Prefab:
       propertyPath: aoBater.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1542939594}
+    - target: {fileID: 61276168237055288, guid: 867da2ed13811b347a09b4756abcd004,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 867da2ed13811b347a09b4756abcd004, type: 2}
   m_IsPrefabParent: 0

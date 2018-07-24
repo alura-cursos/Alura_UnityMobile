@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   alvo: {fileID: 0}
-  velocidade: 5
+  forca: 5
 --- !u!114 &114961902889299820
 MonoBehaviour:
   m_ObjectHideFlags: 1
