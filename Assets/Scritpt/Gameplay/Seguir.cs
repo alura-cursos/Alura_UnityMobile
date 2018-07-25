@@ -8,6 +8,7 @@ public class Seguir : MonoBehaviour {
     private Transform alvo;
     [SerializeField]
     private float forca;
+    
 
     private Rigidbody2D fisica;
 
