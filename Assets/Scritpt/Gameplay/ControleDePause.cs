@@ -2,34 +2,51 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ControleDePause : MonoBehaviour {
+public class ControleDePause : MonoBehaviour
+{
 
     [SerializeField]
     private GameObject painelPause;
-    [SerializeField, Range(0,1)]
+    [SerializeField, Range(0, 1)]
     private float escalaDeTempoDuranteOPause;
 
-    private void Update () {
+    private bool jogoEstaParado;
+    private void Update()
+    {
         if (this.EstaoTocandoNaTela())
         {
-            this.ContinuarJogo();
+            if (this.jogoEstaParado)
+            {
+                this.ContinuarJogo();
+            }
         }
         else
         {
-            this.PararJogo();
+            if (!this.jogoEstaParado)
+            {
+                this.PararJogo();
+            }
         }
-	}
+    }
 
     private void ContinuarJogo()
     {
-        this.painelPause.SetActive(false);
+        StartCoroutine(this.EsperarEContinuarOJogo());
+    }
+
+    private IEnumerator EsperarEContinuarOJogo()
+    {
+        yield return new WaitForSecondsRealtime(0.2f);
         this.MudarEscalaDeTempo(1);
+        this.painelPause.SetActive(false);
+        this.jogoEstaParado = false;
     }
 
     private void PararJogo()
     {
         this.painelPause.SetActive(true);
         this.MudarEscalaDeTempo(this.escalaDeTempoDuranteOPause);
+        this.jogoEstaParado = true;
     }
 
     private bool EstaoTocandoNaTela()
