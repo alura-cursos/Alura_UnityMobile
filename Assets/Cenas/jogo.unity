@@ -333,7 +333,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0
+  m_Text: 4
 --- !u!114 &679329955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -881,7 +881,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.866}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.153}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1412,6 +1412,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbbcd147a97fdc44789c9cf0d5d8d70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  painelPause: {fileID: 1344085548}
+  escalaDeTempoDuranteOPause: 0.046
 --- !u!4 &1968758342
 Transform:
   m_ObjectHideFlags: 0
