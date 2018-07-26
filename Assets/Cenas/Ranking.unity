@@ -237,6 +237,7 @@ GameObject:
   - component: {fileID: 82167981}
   - component: {fileID: 82167983}
   - component: {fileID: 82167982}
+  - component: {fileID: 82167984}
   m_Layer: 5
   m_Name: Pontos
   m_TagString: Untagged
@@ -301,6 +302,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 82167980}
+--- !u!114 &82167984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 82167980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78fe67842f231cf498ef0d0490ebbbbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &285902255
 GameObject:
   m_ObjectHideFlags: 0
@@ -721,6 +733,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1016959372}
+  - component: {fileID: 1016959373}
   - component: {fileID: 1016959376}
   - component: {fileID: 1016959375}
   m_Layer: 5
@@ -751,6 +764,18 @@ RectTransform:
   m_AnchoredPosition: {x: -0.5, y: 2.4003906}
   m_SizeDelta: {x: 1, y: 2.4013}
   m_Pivot: {x: 0.5, y: 1}
+--- !u!114 &1016959373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1016959371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01ccc15a2b50afd4a98a6dec7bef7898, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textoPontuacao: {fileID: 82167984}
 --- !u!114 &1016959375
 MonoBehaviour:
   m_ObjectHideFlags: 0
