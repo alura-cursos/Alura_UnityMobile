@@ -5,6 +5,9 @@ using UnityEngine;
 public class NovaPontuacao : MonoBehaviour {
     [SerializeField]
     private TextoDinamico textoPontuacao;
+    [SerializeField]
+    private Ranking ranking;
+
 
     private Pontuacao pontuacao;
 	
@@ -16,6 +19,7 @@ public class NovaPontuacao : MonoBehaviour {
             totalDePontos = this.pontuacao.Pontos;
         }
         this.textoPontuacao.AtualizarTexto(totalDePontos);
+        this.ranking.AdicionarPontuacao(totalDePontos);
 	}
 	
 	
