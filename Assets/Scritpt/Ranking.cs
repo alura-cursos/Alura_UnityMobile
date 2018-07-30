@@ -7,25 +7,30 @@ public class Ranking : MonoBehaviour {
     private static string NOME_DO_ARQUIVO = "Ranking.json";
     [SerializeField]
     private List<int> pontos;
-	
-	private void Awake () {
-        this.pontos = new List<int>();
+
+    private string caminhoParaOArquivo;
+
+    private void Awake () {
+        this.caminhoParaOArquivo = Path.Combine(Application.persistentDataPath,
+           NOME_DO_ARQUIVO);
+        var textoJson = File.ReadAllText(this.caminhoParaOArquivo);
+        JsonUtility.FromJsonOverwrite(textoJson, this);
 	}
 	
 	public void AdicionarPontuacao(int pontos)
     {
         this.pontos.Add(pontos);
-        this.pontos.Add(2);
-        this.pontos.Add(4);
         this.SalvarRanking();
     }
-
+    
+    public int Quantidade()
+    {
+        return this.pontos.Count;
+    }
     private void SalvarRanking()
     {
         //Como irei salvar o ranking?
         var textoJson = JsonUtility.ToJson(this);
-        var caminhoParaOArquivo = Path.Combine(Application.persistentDataPath, NOME_DO_ARQUIVO);
-        File.WriteAllText(caminhoParaOArquivo, textoJson);
-        Debug.Log(Application.persistentDataPath);
+        File.WriteAllText(this.caminhoParaOArquivo, textoJson);
     }
 }
