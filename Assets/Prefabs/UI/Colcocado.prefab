@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 224508937004689454}
   - component: {fileID: 222849910887456586}
   - component: {fileID: 114748774360679222}
+  - component: {fileID: 114447903152755244}
   m_Layer: 5
   m_Name: Colcocado
   m_TagString: Untagged
@@ -103,7 +104,7 @@ MonoBehaviour:
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 1
-    m_MinSize: 10
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -112,6 +113,20 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 000
+--- !u!114 &114447903152755244
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1070110718277318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7d72361e9b063f40a26c969cddf4c9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textoColocacao: {fileID: 114681346884052994}
+  textoNome: {fileID: 114555518179884386}
+  textoPontuacao: {fileID: 114198080508628156}
 --- !u!114 &114555518179884386
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -136,7 +151,7 @@ MonoBehaviour:
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 1
-    m_MinSize: 10
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -169,7 +184,7 @@ MonoBehaviour:
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 1
-    m_MinSize: 10
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
