@@ -11,14 +11,17 @@ public class PainelRanking : MonoBehaviour {
 	
 	private void Start () {
         var quantidade = this.ranking.Quantidade();
-        for(var i=0; i<quantidade; i++)
+        var colocacao = 1;
+        foreach(var ponto in this.ranking)
         {
-            if(i >= 5)
+            if(colocacao > 5)
             {
                 break;
             }
-           var colocado = GameObject.Instantiate(this.prefabColocado, this.transform);
-            colocado.GetComponent<ItemRanking>().Configurar(i, "Ricardo", 999);
+            //criar um colocado
+            var colocado = GameObject.Instantiate(this.prefabColocado, this.transform);
+            colocado.GetComponent<ItemRanking>().Configurar(colocacao, "Ricardo", ponto);
+            colocacao++;
         }
 	}
 }
