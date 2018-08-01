@@ -62,7 +62,7 @@ public class Ranking : MonoBehaviour {
     private void SalvarRanking()
     {
         //Como irei salvar o ranking?
-        var textoJson = JsonUtility.ToJson(this);
+        var textoJson = JsonUtility.ToJson(this, true);
         File.WriteAllText(this.caminhoParaOArquivo, textoJson);
     }
 }
