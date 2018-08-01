@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
+using System.Collections.ObjectModel;
 
-public class Ranking : MonoBehaviour, IEnumerable<int>{
+public class Ranking : MonoBehaviour {
     private static string NOME_DO_ARQUIVO = "Ranking.json";
     [SerializeField]
     private List<int> pontos;
@@ -25,23 +26,18 @@ public class Ranking : MonoBehaviour, IEnumerable<int>{
     
     public int Quantidade()
     {
-
         return this.pontos.Count;
     }
+
+    public ReadOnlyCollection<int> GetPontos()
+    {
+        return this.pontos.AsReadOnly();
+    }
+    
     private void SalvarRanking()
     {
         //Como irei salvar o ranking?
         var textoJson = JsonUtility.ToJson(this);
         File.WriteAllText(this.caminhoParaOArquivo, textoJson);
-    }
-
-    public IEnumerator<int> GetEnumerator()
-    {
-        return this.pontos.GetEnumerator();
-    }
-
-    IEnumerator IEnumerable.GetEnumerator()
-    {
-        return this.pontos.GetEnumerator();
     }
 }
