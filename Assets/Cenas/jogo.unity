@@ -644,7 +644,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Pressione e deslise o dedo para jogar
+  m_Text: Pressione e deslize o dedo para jogar
 --- !u!222 &996169616
 CanvasRenderer:
   m_ObjectHideFlags: 0
